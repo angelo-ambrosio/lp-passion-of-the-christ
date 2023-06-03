@@ -1,0 +1,47 @@
+@use 'hero';
+@use 'about';
+
+@font-face {
+    font-family: Trajan;
+    src: url(../../assets/fonts/TrajanPro-Regular.woff);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Trajan;
+    src: url(../../assets/fonts/TrajanPro-Bold.woff);
+    font-weight: 700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #000;
+}
+
+.title{
+    font-family: Trajan, serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #C1A377;
+}
+
+.title--big{
+    font-family: Trajan, serif;
+    font-weight: 700;
+    font-size: 48px;
+    color: #C1A377;
+}
+
+.title--small{
+    font-family: Trajan, serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #C1A377;
+}
