@@ -1,0 +1,66 @@
+.info{
+    padding: 60px 60px;
+    background: url(../../assets/images/jesus-plano-aberto.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+
+    &:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.8);
+        z-index: 0;
+    }
+
+
+    &__title{
+        text-align: center;
+        position: inherit;
+    }
+
+    &__right,
+    &__left{
+        padding: 70px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        
+        img{
+            max-height: 90%;
+            max-width: 90%;
+            margin: 0 auto;
+            border-radius: 10px;
+            position: relative;
+            box-shadow: 10px 10px 0px #C1A377;
+        }
+
+        p{
+            margin: 30px 0;
+            line-height: 2em;
+            font-size: 18px;
+        }
+    }
+
+    &__left{
+        img{
+            order: 2;
+            right: 0;
+        }
+
+        &__description{
+            order: 1;
+        }
+    }
+}
+
+.info *,
+.info div p{
+    position: inherit;
+    color: white;
+}
