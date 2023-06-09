@@ -16,7 +16,6 @@
         z-index: 0;
     }
 
-
     &__title{
         text-align: center;
         position: inherit;
@@ -35,9 +34,8 @@
             max-height: 90%;
             max-width: 90%;
             margin: 0 auto;
-            border-radius: 10px;
             position: relative;
-            box-shadow: 10px 10px 0px #C1A377;
+            box-shadow: -10px 10px 0px #C1A377;
         }
 
         p{
@@ -51,6 +49,7 @@
         img{
             order: 2;
             right: 0;
+            box-shadow: 10px 10px 0px #C1A377;
         }
 
         &__description{
@@ -63,4 +62,12 @@
 .info div p{
     position: inherit;
     color: white;
+}
+
+.info{
+    div p {
+        @media (min-width: 1600px){
+            font-size: 24px;
+        }
+    }
 }

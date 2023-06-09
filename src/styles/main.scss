@@ -1,6 +1,9 @@
 @use 'hero';
 @use 'about';
 @use 'info';
+@use 'cast';
+@use 'watch';
+@use 'footer';
 
 @font-face {
     font-family: Trajan;
@@ -31,6 +34,10 @@ body{
     font-weight: 700;
     font-size: 36px;
     color: #C1A377;
+
+    @media (min-width: 1600px){
+        font-size: 48px;
+    }
 }
 
 .title--big{
@@ -38,6 +45,10 @@ body{
     font-weight: 700;
     font-size: 48px;
     color: #C1A377;
+
+    @media (min-width: 1600px){
+        font-size: 60px;
+    }
 }
 
 .title--small{
@@ -45,4 +56,8 @@ body{
     font-weight: 700;
     font-size: 28px;
     color: #C1A377;
+
+    @media (min-width: 1600px){
+        font-size: 36px;
+    }
 }

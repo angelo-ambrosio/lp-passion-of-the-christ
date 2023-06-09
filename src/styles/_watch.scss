@@ -1,0 +1,44 @@
+.watch{
+    background-color: #fff;
+    min-height: 30vw;
+    display: flex;
+    align-items: center;
+
+    &__content{
+        text-align: center;
+
+        h2{
+            margin-bottom: 40px;
+        }
+
+        &__buttons{
+            max-width: 100%;
+            display: flex;
+            gap: 15px;
+            padding: 0 50px;
+
+            button{
+                cursor: pointer;
+                background-color: #fff;
+                border-radius: 10px;
+                border: 2px solid #000;
+                transition: .3s;
+
+                img{
+                    max-width: 80%;
+                    opacity: 1;
+                    transition: .3s;
+                }
+
+                &:hover{
+                    border: 2px solid #c1a377;
+                    
+                    img{
+                        transform: scale(0.95);
+                        opacity: .7;
+                    }
+                }
+            }
+        }
+    }
+}
