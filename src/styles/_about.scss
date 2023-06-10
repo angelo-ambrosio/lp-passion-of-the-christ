@@ -22,6 +22,11 @@
             overflow-y: hidden;
         }
 
+        @media(max-width: 600px){
+            display: none;
+            visibility: hidden;
+        }
+
         img{
             border-radius: 20px;
             box-shadow: -10px 10px 9px rgba($color: #000, $alpha: 0.4);
@@ -34,11 +39,6 @@
 
             @media(max-width: 821px){
                 max-width: 300px;
-            }
-
-            @media(max-width: 600px){
-                display: none;
-                visibility: hidden;
             }
         }
         
