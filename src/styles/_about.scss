@@ -10,6 +10,10 @@
         padding-bottom: 50px;
     }
 
+    @media(max-width: 600px){
+        grid-template-columns: 1fr;
+    }
+
     &__pictures{
         position: relative;
         height: 100%;
@@ -27,8 +31,18 @@
             @media (min-width: 1600px){
                 max-width: 550px;
             }
+
+            @media(max-width: 821px){
+                max-width: 300px;
+            }
+
+            @media(max-width: 600px){
+                display: none;
+                visibility: hidden;
+            }
         }
         
+        //JESUS
         &__item1{
             z-index: 2;
             top: 30%;
@@ -38,16 +52,26 @@
                 left: 250px;
                 top: 25%;
             }
+
+            @media(max-width: 821px){
+                left: 100px;
+            }
          
         }
         
+        //WALKING
         &__item2{
             top: 20%;
             z-index: 1;
             left: -150px;
+
+            @media(max-width: 821px){
+                left: -115px;
+            }
                 
         }
         
+        //MARY
         &__item3{
             top: 58%;
             left: -100px;
@@ -55,6 +79,12 @@
 
             @media (min-width: 1600px){
                 top: 60%;
+                z-index: 3;
+            }
+
+            @media(max-width: 821px){
+                left: -90px;
+                top: 50%;
                 z-index: 3;
             }
         }
@@ -69,8 +99,20 @@
             padding-right: 150px;
         }
 
+        @media(max-width: 821px){
+            padding: 0 30px;
+        }
+
+        @media(max-width: 600px){
+            padding: 0 20px;
+        }
+
         &__title{
             margin-bottom: 40px;
+
+            @media(max-width: 821px){
+                text-align: center;
+            }
         }
 
         p{
@@ -81,6 +123,18 @@
             @media (min-width: 1600px){
                 font-size: 24px;
                 line-height: 48px;
+            }
+
+            @media(max-width: 821px){
+                font-size: 16px;
+                text-align: center;
+                padding: 0 15px;
+                line-height: 30px;
+            }
+
+            @media(max-width: 600px){
+                padding: 0;
+                font-size: 14px;
             }
         }
     }

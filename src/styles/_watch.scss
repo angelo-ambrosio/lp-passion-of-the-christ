@@ -9,6 +9,11 @@
 
         h2{
             margin-bottom: 40px;
+
+            @media(max-width: 600px){
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
         }
 
         &__buttons{
@@ -17,12 +22,23 @@
             gap: 15px;
             padding: 0 50px;
 
+            @media(max-width: 600px){
+                flex-direction: column;
+                padding: 0;
+                max-width: 80%;
+                margin: 0 auto;
+            }
+
             button{
                 cursor: pointer;
                 background-color: #fff;
                 border-radius: 10px;
                 border: 2px solid #000;
                 transition: .3s;
+
+                @media(max-width: 600px){
+                    border: 1px solid #000;
+                }
 
                 img{
                     max-width: 80%;
@@ -32,6 +48,10 @@
 
                 &:hover{
                     border: 2px solid #c1a377;
+
+                    @media(max-width: 600px){
+                        border: 1px solid #c1a377;
+                    }
                     
                     img{
                         transform: scale(0.95);

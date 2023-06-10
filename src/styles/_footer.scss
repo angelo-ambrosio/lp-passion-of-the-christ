@@ -2,13 +2,25 @@
     text-align: center;
     padding: 20px 80px;
 
+    @media(max-width: 600px){
+        padding: 20px 30px;
+    }
+
     img{
         max-width: 150px;
+
+        @media(max-width: 600px){
+            max-width: 100px;
+        }
     }
 
     p{
         color: #aaa;
         margin-top: 15px;
         font-size: 12px;
+
+        @media(max-width: 600px){
+            font-size: 8px;
+        }
     }
 }

@@ -38,6 +38,10 @@ body{
     @media (min-width: 1600px){
         font-size: 48px;
     }
+
+    @media(max-width: 600px){
+        font-size: 24px;
+    }
 }
 
 .title--big{
@@ -49,6 +53,10 @@ body{
     @media (min-width: 1600px){
         font-size: 60px;
     }
+
+    @media(max-width: 600px){
+        font-size: 32px;
+    }
 }
 
 .title--small{
@@ -59,5 +67,9 @@ body{
 
     @media (min-width: 1600px){
         font-size: 36px;
+    }
+
+    @media(max-width: 600px){
+        font-size: 18px;
     }
 }
